@@ -1,4 +1,9 @@
- @charset "utf-8";.
+﻿   @charset "utf-8";.
+   @font-face {
+   font-family: Quicksand;
+   src: url('Quicksand-Regular.woff') format('woff'),
+        url('Quicksand-Regular.ttf') format('truetype');
+   }
 /*
    New Perspectives on HTML5 and CSS3, 8th Edition
    Tutorial 2
@@ -15,20 +20,24 @@
 
 
 /* HTML and Body Styles */
- html {
+  html {
    background-color: hsl(27, 72%, 72%);
   }
   body {
    color: rgb(91, 91, 91);
    background-color: ivory;
-      }
+   font-family: Verdana, Geneva, sans-serif;
+   }
  
 
 
 
 
 /* Heading Styles */
- h1 {
+  h1, h2 {
+   font-family: Quicksand, Verdana, Geneva, sans-serif;
+   }
+  h1 {
    color: white;
    background-color: rgb(222, 128, 60);
    letter-spacing: 0.1em;
@@ -45,6 +54,10 @@
     }
    h2 {
     font-size: 1.5em;
+  }
+  article.syllabus h1, article.syllabus h2 {
+    background-color: rgb(255, 185, 255);
+    color: rgb(101, 101, 101);
    }
 
 
@@ -54,6 +67,8 @@
 /* Aside and Blockquote Styles */
   aside blockquote {
   color: rgb(232, 165, 116);
+  margin: 20px 5px;
+  quotes: "\201C" "\201D";
  }
   aside {
   font-size: 0.8em;
@@ -64,7 +79,7 @@
     font-size: 1.6em;
     font-weight: bold;
    }
-   aside blockquote::after {
+  aside blockquote::after {
     content: close-quote;
     font-family: ‘Times New Roman’, Times, serif;
     font-size: 1.6em;
@@ -78,19 +93,19 @@
  nav {
   font-size: 0.8em;
  }
- nav > ul {
+nav > ul {
   line-height: 2em;
   list-style-type: none;
   style padding-left: 5px;.
  }
- nav > ul > li.newgroup {
+nav > ul > li.newgroup {
   margin-top: 20px;
  }
- nav > ul > li > a:link, nav > ul > li > a:visited {
+nav > ul > li > a:link, nav > ul > li > a:visited {
   color: rgb(151, 151, 151);
   text-decoration: none;
  }
- nav > ul > li > a:hover, nav > ul > li > a:active {
+nav > ul > li > a:hover, nav > ul > li > a:active {
   color: rgb(255, 64, 255);
   text-decoration: underline;
  }
@@ -104,7 +119,7 @@
  }
  article#about_tss ul li:last-of-type {
   list-style-image: url(swimicon.png);
- }
+ } 
 
 
 
