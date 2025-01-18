@@ -1,4 +1,4 @@
-﻿ @charset "utf-8";.
+ @charset "utf-8";.
 /*
    New Perspectives on HTML5 and CSS3, 8th Edition
    Tutorial 2
@@ -58,8 +58,6 @@
   aside {
   font-size: 0.8em;
   }
-   margin: 20px 5px;
-   quotes: "\201C" "\201D";
    aside blockquote::before {
     content: open-quote;
     font-family: ‘Times New Roman’, Times, serif;
@@ -106,8 +104,6 @@
  }
  article#about_tss ul li:last-of-type {
   list-style-image: url(swimicon.png);
- } {
-  list-style-image: url(runicon.png);
  }
 
 
